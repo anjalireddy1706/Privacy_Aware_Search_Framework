@@ -4,7 +4,6 @@ This repository contains the implementation and evaluation framework for **Sensi
 
 This project integrates state-of-the-art neural retrieval models — **ColBERT** and **SPLADE** — with an **SVM-based sensitivity classifier** to build a responsible search pipeline.
 
----
 
 ## Project Overview
 
@@ -17,7 +16,6 @@ Traditional Information Retrieval (IR) systems assume all documents are equally 
 
 This framework evaluates both **single-model** and **multi-model pipelines**, applying fusion strategies to demote sensitive documents below visibility thresholds (e.g., top K = 10), while preserving relevance for safe content.
 
----
 
 ## Key Features
 
@@ -35,7 +33,6 @@ This framework evaluates both **single-model** and **multi-model pipelines**, ap
 - **Cost-Sensitive Evaluation**  
   Uses **nCS-DCG**, penalizing retrieval of sensitive documents  
 
----
 
 ## System Architecture
 
@@ -51,7 +48,6 @@ Two-stage pipeline:
 2. SPLADE for precise re-ranking  
 3. Sensitivity filtering  
 
----
 
 ## Fusion Methodologies
 
@@ -61,7 +57,6 @@ Two-stage pipeline:
 | **Harmonic Mean** | Strong penalty if either relevance or privacy is low | `f(R,S,α) = 1 / (α/R + (1−α)/(1−S))` |
 | **Ridge (Basis Function)** | Learns optimal weights from features | `f(R,S) = Σ wᵢ·φᵢ(R,S)` |
 
----
 
 ## Key Findings
 
@@ -89,7 +84,6 @@ Experiments were conducted on the **SARA Collection**:
   - 87.6% non-sensitive  
 - **Queries:** 150 topics (business, legal, personal)
 
----
 
 ## Usage
 
