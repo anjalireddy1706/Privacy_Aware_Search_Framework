@@ -46,8 +46,9 @@ Sequential pipeline combining:
 Two-stage pipeline:
 1. ColBERT for efficient retrieval  
 2. SPLADE for precise re-ranking  
-3. Sensitivity filtering  
+3. Sensitivity filtering
 
+![Architecture Diagram](Architecture%20Diagram.jpeg)
 
 ## Fusion Methodologies
 
