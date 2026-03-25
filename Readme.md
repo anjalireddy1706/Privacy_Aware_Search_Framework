@@ -3,7 +3,7 @@
 This repository contains the implementation and evaluation framework for **Sensitivity-Aware Search (SAS)** — a paradigm designed to optimize retrieval effectiveness while mitigating the exposure of sensitive documents.
 
 This project integrates state-of-the-art neural retrieval models - **ColBERT** and **SPLADE** with an **SVM-based sensitivity classifier** to build a responsible search pipeline.
-
+![Architecture Diagram](Architecture%20Diagram.jpeg)
 
 ## Project Overview
 
@@ -48,7 +48,6 @@ Two-stage pipeline:
 2. SPLADE for precise re-ranking  
 3. Sensitivity filtering
 
-![Architecture Diagram](Architecture%20Diagram.jpeg)
 
 ## Fusion Methodologies
 
