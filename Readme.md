@@ -91,25 +91,12 @@ Experiments were conducted on the **SARA Collection**:
 
 ---
 
-## 📁 File Structure
+## Usage
 
-### 📓 Notebooks
+Run notebooks in the following order:
 - `01_Colbert.ipynb` → Dense retrieval (ColBERT)  
 - `02_Splade.ipynb` → Sparse retrieval (SPLADE)  
 - `03_Colbert+Splade.ipynb` → Two-stage pipeline  
 - `04_SVM_Classification.ipynb` → Sensitivity classifier  
 - `05_Evaluation.ipynb` → Evaluation & metrics  
 
-
-## Usage
-
-Run notebooks in the following order:
-
-1. `01_Colbert.ipynb` → `03_Colbert+Splade.ipynb`  
-2. `04_SVM_Classification.ipynb`  
-3. `05_Evaluation.ipynb`  
-
-This will:
-- Generate retrieval results  
-- Train classifier  
-- Apply fusion and evaluate  
